@@ -1,0 +1,22 @@
+{
+  "name": "HLToolKit-Swift",
+  "version": "0.1.0",
+  "summary": "A short description of HLToolKit-Swift.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/757437150@qq.com/HLToolKit-Swift",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "757437150@qq.com": "757437150@qq.com"
+  },
+  "source": {
+    "git": "https://github.com/757437150@qq.com/HLToolKit-Swift.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "HLToolKit-Swift/Classes/**/*"
+}

@@ -1,0 +1,16 @@
+PODS:
+  - HLToolKit-Swift (0.1.0)
+
+DEPENDENCIES:
+  - HLToolKit-Swift (from `../`)
+
+EXTERNAL SOURCES:
+  HLToolKit-Swift:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  HLToolKit-Swift: 274c1eedf42428557420b0065653c89fbc97fcde
+
+PODFILE CHECKSUM: 4642ede4bbba6782d68a5d9f59a421b08d34ae19
+
+COCOAPODS: 1.7.0.rc.2

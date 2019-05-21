@@ -1,0 +1,6 @@
+framework module HLToolKit_Swift {
+  umbrella header "HLToolKit-Swift-umbrella.h"
+
+  export *
+  module * { export * }
+}
