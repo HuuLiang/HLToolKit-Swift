@@ -18,7 +18,7 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-TODO: Swift版本工具集
+                            Swift版本工具集
                        DESC
 
   s.homepage         = 'https://github.com/HuuLiang/HLToolKit-Swift'
