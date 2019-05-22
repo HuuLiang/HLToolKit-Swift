@@ -3,9 +3,9 @@ use_frameworks!
 target 'HLToolKit-Swift_Example' do
   pod 'HLToolKit-Swift', :path => '../'
 
-  target 'HLToolKit-Swift_Tests' do
-    inherit! :search_paths
-
-    
-  end
+#  target 'HLToolKit-Swift_Tests' do
+#    inherit! :search_paths
+#
+#
+#  end
 end

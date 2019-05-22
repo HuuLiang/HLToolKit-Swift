@@ -7,12 +7,42 @@
 //
 
 import UIKit
+import HLToolKit_Swift
 
 class ViewController: UIViewController {
-
+    
+    var btn:UIButton!
+    
+    required init?(coder aDecoder: NSCoder) {
+        super.init(coder: aDecoder)
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+//        self.btn = UIButton(type: .custom)
+//        self.btn.frame = CGRect.init(x: 100, y: 100, width: 200, height: 50)
+//        self.btn.backgroundColor = UIColor.init(hex: "#efefef")
+//        self.btn.setTitleColor(UIColor.hex("#333333"), for: UIControl.State.normal)
+//        self.btn.setTitle("button", for: UIControlState.normal)
+//        self.view.addSubview(self.btn)
+        
+        
+        let start:CFAbsoluteTime = CFAbsoluteTimeGetCurrent()
+        for index in 1...1 {
+            let color = UIColor.hex("#efefef")
+        }
+        let end: CFAbsoluteTime = CFAbsoluteTimeGetCurrent()
+        print(end - start)
+        
+        
+        let start1:CFAbsoluteTime = CFAbsoluteTimeGetCurrent()
+        for index in 1...1 {
+            let color = UIColor("#efefef")
+        }
+        let end1: CFAbsoluteTime = CFAbsoluteTimeGetCurrent()
+        print(end1 - start1)
+
     }
 
     override func didReceiveMemoryWarning() {
