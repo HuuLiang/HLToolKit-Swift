@@ -8,6 +8,7 @@
 
 import UIKit
 import HLToolKit_Swift
+import HandyJSON
 
 class ViewController: UIViewController {
     
@@ -20,28 +21,40 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        HLReq.fetchPurchaseCateList { (obj, error) in
+            
+        }
+        
+        
 //        self.btn = UIButton(type: .custom)
 //        self.btn.frame = CGRect.init(x: 100, y: 100, width: 200, height: 50)
-//        self.btn.backgroundColor = UIColor.init(hex: "#efefef")
-//        self.btn.setTitleColor(UIColor.hex("#333333"), for: UIControl.State.normal)
+//        self.btn.backgroundColor = UIColor.hex("#efefef")
+//        self.btn.setTitleColor(UIColor.hex("#000000"), for: UIControl.State.normal)
 //        self.btn.setTitle("button", for: UIControlState.normal)
+//
+////        self.btn.forceRoundCorner = true
+//        self.btn.layer.cornerRadius = 20;
+//        let corners: UIRectCorner = [.bottomLeft,.bottomRight]
+//        self.btn.rectCorner = corners
+//
 //        self.view.addSubview(self.btn)
         
         
-        let start:CFAbsoluteTime = CFAbsoluteTimeGetCurrent()
-        for index in 1...1 {
-            let color = UIColor.hex("#efefef")
-        }
-        let end: CFAbsoluteTime = CFAbsoluteTimeGetCurrent()
-        print(end - start)
         
-        
-        let start1:CFAbsoluteTime = CFAbsoluteTimeGetCurrent()
-        for index in 1...1 {
-            let color = UIColor("#efefef")
-        }
-        let end1: CFAbsoluteTime = CFAbsoluteTimeGetCurrent()
-        print(end1 - start1)
+//        let start:CFAbsoluteTime = CFAbsoluteTimeGetCurrent()
+//        for index in 1...1 {
+//            let color = UIColor.hex("#efefef")
+//        }
+//        let end: CFAbsoluteTime = CFAbsoluteTimeGetCurrent()
+//        print(end - start)
+//
+//
+//        let start1:CFAbsoluteTime = CFAbsoluteTimeGetCurrent()
+//        for index in 1...1 {
+//            let color = UIColor("#efefef")
+//        }
+//        let end1: CFAbsoluteTime = CFAbsoluteTimeGetCurrent()
+//        print(end1 - start1)
 
     }
 

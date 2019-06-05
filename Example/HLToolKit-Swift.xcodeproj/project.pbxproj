@@ -13,6 +13,11 @@
 		607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 607FACD91AFB9204008FA782 /* Main.storyboard */; };
 		607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDC1AFB9204008FA782 /* Images.xcassets */; };
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
+		EC37971B22A4ECC2009E935F /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC37971A22A4ECC2009E935F /* User.swift */; };
+		EC37994F22A50AEB009E935F /* httper.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC37994E22A50AEB009E935F /* httper.swift */; };
+		EC9FFA7A22A65A18005C27AD /* TestData.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC9FFA7922A65A18005C27AD /* TestData.swift */; };
+		EC9FFA7C22A667CE005C27AD /* NetworkConfig.geojson in Resources */ = {isa = PBXBuildFile; fileRef = EC9FFA7B22A667CE005C27AD /* NetworkConfig.geojson */; };
+		ECBF1DE7229FCAA60037EFF3 /* homeData.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECBF1DE6229FCAA60037EFF3 /* homeData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +34,11 @@
 		8220DCC265625FA903F6BD0E /* Pods_HLToolKit_Swift_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HLToolKit_Swift_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8E515A6DBA0074A706CED9CC /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		C3407216595B43FA0217F7B3 /* Pods-HLToolKit-Swift_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HLToolKit-Swift_Tests.debug.xcconfig"; path = "Target Support Files/Pods-HLToolKit-Swift_Tests/Pods-HLToolKit-Swift_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		EC37971A22A4ECC2009E935F /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		EC37994E22A50AEB009E935F /* httper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = httper.swift; sourceTree = "<group>"; };
+		EC9FFA7922A65A18005C27AD /* TestData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestData.swift; sourceTree = "<group>"; };
+		EC9FFA7B22A667CE005C27AD /* NetworkConfig.geojson */ = {isa = PBXFileReference; lastKnownFileType = text; path = NetworkConfig.geojson; sourceTree = "<group>"; };
+		ECBF1DE6229FCAA60037EFF3 /* homeData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = homeData.swift; sourceTree = "<group>"; };
 		ED0627ED5F0350985DCAA1DA /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		F09E00D1A188523408400BFA /* Pods-HLToolKit-Swift_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HLToolKit-Swift_Tests.release.xcconfig"; path = "Target Support Files/Pods-HLToolKit-Swift_Tests/Pods-HLToolKit-Swift_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		F41543F136AD32AB5C439CAC /* Pods-HLToolKit-Swift_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HLToolKit-Swift_Example.debug.xcconfig"; path = "Target Support Files/Pods-HLToolKit-Swift_Example/Pods-HLToolKit-Swift_Example.debug.xcconfig"; sourceTree = "<group>"; };
@@ -68,6 +78,7 @@
 		607FACD21AFB9204008FA782 /* Example for HLToolKit-Swift */ = {
 			isa = PBXGroup;
 			children = (
+				ECBF1DE5229FC9C30037EFF3 /* network */,
 				607FACD51AFB9204008FA782 /* AppDelegate.swift */,
 				607FACD71AFB9204008FA782 /* ViewController.swift */,
 				607FACD91AFB9204008FA782 /* Main.storyboard */,
@@ -115,6 +126,18 @@
 				5E5D8006D3623458450A0E2E /* Pods_HLToolKit_Swift_Tests.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		ECBF1DE5229FC9C30037EFF3 /* network */ = {
+			isa = PBXGroup;
+			children = (
+				ECBF1DE6229FCAA60037EFF3 /* homeData.swift */,
+				EC9FFA7922A65A18005C27AD /* TestData.swift */,
+				EC37971A22A4ECC2009E935F /* User.swift */,
+				EC37994E22A50AEB009E935F /* httper.swift */,
+				EC9FFA7B22A667CE005C27AD /* NetworkConfig.geojson */,
+			);
+			path = network;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -180,6 +203,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EC9FFA7C22A667CE005C27AD /* NetworkConfig.geojson in Resources */,
 				607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */,
 				607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */,
 				607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */,
@@ -196,11 +220,23 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-HLToolKit-Swift_Example/Pods-HLToolKit-Swift_Example-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/Aspects/Aspects.framework",
+				"${BUILT_PRODUCTS_DIR}/CodableAlamofire/CodableAlamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/HLToolKit-Swift/HLToolKit_Swift.framework",
+				"${BUILT_PRODUCTS_DIR}/HandyJSON/HandyJSON.framework",
+				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
+				"${BUILT_PRODUCTS_DIR}/PromiseKit/PromiseKit.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Aspects.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CodableAlamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/HLToolKit_Swift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/HandyJSON.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PromiseKit.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -236,7 +272,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ECBF1DE7229FCAA60037EFF3 /* homeData.swift in Sources */,
 				607FACD81AFB9204008FA782 /* ViewController.swift in Sources */,
+				EC37971B22A4ECC2009E935F /* User.swift in Sources */,
+				EC9FFA7A22A65A18005C27AD /* TestData.swift in Sources */,
+				EC37994F22A50AEB009E935F /* httper.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

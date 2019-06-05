@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'HLToolKit-Swift'
-  s.version          = '0.0.1'
+  s.version          = '0.0.2'
   s.summary          = 'A common tools for ios develop by swift.'
 
 # This description is used to generate tags and improve search results.
@@ -26,12 +26,19 @@ Pod::Spec.new do |s|
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'HuLiangLiang' => 'Liangola@qq.com' }
   s.source           = { :git => 'https://github.com/HuuLiang/HLToolKit-Swift.git', :tag => s.version.to_s }
-  s.swift_version    = "4.0"
+  s.swift_version    = "5.0.1"
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '8.0'
 
   s.source_files = 'HLToolKit-Swift/**/*'
+  
+  s.dependency  'Aspects'
+  s.dependency  'Alamofire'
+  s.dependency  'CodableAlamofire'
+  s.dependency  'Kingfisher'
+  s.dependency  'HandyJSON'
+  s.dependency  'PromiseKit'
   
   # s.resource_bundles = {
   #   'HLToolKit-Swift' => ['HLToolKit-Swift/Assets/*.png']

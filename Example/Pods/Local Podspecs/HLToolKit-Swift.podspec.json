@@ -20,5 +20,25 @@
     "ios": "8.0"
   },
   "source_files": "HLToolKit-Swift/**/*",
+  "dependencies": {
+    "Aspects": [
+
+    ],
+    "Alamofire": [
+
+    ],
+    "CodableAlamofire": [
+
+    ],
+    "Kingfisher": [
+
+    ],
+    "HandyJSON": [
+
+    ],
+    "PromiseKit": [
+
+    ]
+  },
   "swift_version": "4.0"
 }
