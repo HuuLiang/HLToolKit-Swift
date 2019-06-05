@@ -19,9 +19,9 @@ enum HLReqAPI:String {
 class HLReq {
     public class func fetchPurchaseCateList(_ completionHandler:@escaping HLCompletionHandler) -> Void {
         let xx:[String:Any] = ["channelType":"home"]
-//        HttpRequest.request(HLReqAPI.homedata.rawValue, .post, xx, HomeData.self) { (resp:HttpResponse<HomeData>, error) in
-//
-//        }
+        HttpRequest.requestData(HLReqAPI.homedata.rawValue, .post, xx, HomeData.self) { (resp, error) in
+            print(resp!)
+        }
     }
 //    func analyzeResponse<T>(_ response: T) {
 //
