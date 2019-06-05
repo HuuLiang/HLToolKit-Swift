@@ -23,8 +23,8 @@ public enum HLHttpError : Error {
 
 
 class HLError {
-    final class func initialize(errorCode:Int? , desc:String?) -> NSError {
-        return NSError.init(domain: kHLNetworkClientErrorDomain, code: errorCode!, userInfo: [NSLocalizedDescriptionKey: desc!])
+    final class func initialize(errorCode:Int , desc:String) -> NSError {
+        return NSError.init(domain: kHLNetworkClientErrorDomain, code: errorCode, userInfo: [NSLocalizedDescriptionKey: desc])
     }
 }
 
@@ -96,11 +96,7 @@ open class HttpRequest {
             }
             do {
                 let responseModel = try JSONDecoder().decode(HttpResponse<T>.self, from: anyObj!)
-                if responseModel.code == 200 {
-                    completionHandler(true ,nil)
-                } else {
-                    completionHandler(false,HLError.initialize(errorCode: responseModel.code!, desc: responseModel.msg!))
-                }
+                completionHandler(responseModel.code == 200 ,nil)
             } catch let error {
                 completionHandler(false,HLError.initialize(errorCode: (error as NSError).code , desc: "NO Response"))
             }
