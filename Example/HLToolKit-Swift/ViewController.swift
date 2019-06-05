@@ -21,9 +21,9 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-//        HLReq.fetchPurchaseCateList { (obj, error) in
-//            
-//        }
+        HLReq.fetchPurchaseCateList { (obj, error) in
+            
+        }
         
         
 //        self.btn = UIButton(type: .custom)
