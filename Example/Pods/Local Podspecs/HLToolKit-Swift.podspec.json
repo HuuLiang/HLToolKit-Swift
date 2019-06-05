@@ -1,6 +1,6 @@
 {
   "name": "HLToolKit-Swift",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "summary": "A common tools for ios develop by swift.",
   "description": "Swift版本工具集，持续更新中。",
   "homepage": "https://github.com/HuuLiang/HLToolKit-Swift",
@@ -13,7 +13,7 @@
   },
   "source": {
     "git": "https://github.com/HuuLiang/HLToolKit-Swift.git",
-    "tag": "0.0.1"
+    "tag": "0.0.2"
   },
   "swift_versions": "5.0.1",
   "platforms": {

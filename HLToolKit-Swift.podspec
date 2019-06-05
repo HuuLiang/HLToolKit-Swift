@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'HLToolKit-Swift'
-  s.version          = '0.0.1'
+  s.version          = '0.0.2'
   s.summary          = 'A common tools for ios develop by swift.'
 
 # This description is used to generate tags and improve search results.

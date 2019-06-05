@@ -1,7 +1,7 @@
 PODS:
   - Alamofire (4.8.2)
   - Aspects (1.4.1)
-  - HLToolKit-Swift (0.0.1):
+  - HLToolKit-Swift (0.0.2):
     - Alamofire
     - Aspects
     - Kingfisher
@@ -34,7 +34,7 @@ EXTERNAL SOURCES:
 SPEC CHECKSUMS:
   Alamofire: ae5c501addb7afdbb13687d7f2f722c78734c2d3
   Aspects: 7595ba96a6727a58ebcbfc954497fc5d2fdde546
-  HLToolKit-Swift: 565dae68701d67c92cc5bfcf5afde4866fe4b14d
+  HLToolKit-Swift: 1afd5e8d064680e7a6f473573367f643da58b573
   Kingfisher: c148cd7b47ebde9989f6bc7c27dcaa79d81279a0
   PromiseKit: 51794a832647e7b819336dc2279039ce9f1cc49b
 
