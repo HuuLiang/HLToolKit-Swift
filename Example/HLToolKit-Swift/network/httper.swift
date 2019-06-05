@@ -8,8 +8,7 @@
 
 import Foundation
 import HLToolKit_Swift
-import HandyJSON
-import Alamofire
+//import HandyJSON
 
 
 enum HLReqAPI:String {
@@ -17,21 +16,25 @@ enum HLReqAPI:String {
     case userlogin = "http://106.14.127.126/myq-store/store/home1"
 }
 
-class HLReq{
+class HLReq {
     public class func fetchPurchaseCateList(_ completionHandler:@escaping HLCompletionHandler) -> Void {
         let xx:[String:Any] = ["channelType":"home"]
-//        HttpRequest.request("http://106.14.127.126/myq-store/store/home", .post, xx, HomeData.self) { (responseObject, error) in
+//        HttpRequest.request(HLReqAPI.homedata.rawValue, .post, xx, HomeData.self) { (resp:HttpResponse<HomeData>, error) in
 //
-//            if let homedata = responseObject {
-//                print(homedata)
-//            }
 //        }
-        HttpRequest.request(HLReqAPI.homedata.rawValue, .post, xx ,HomeData.self) { (resp, error) in
-            print(resp)
-        }
     }
-    
-    
+//    func analyzeResponse<T>(_ response: T) {
+//
+//    }
+//    func analyzeResponse<T>(_ response: T, _ completionHandler: (T?, Error?) -> Void) {
+//
+//    }
+//    func analyzeResponse(_ response: AnyObject?, _ completionHandler: (AnyObject?, Error?) -> Void) {
+//        if let httpResp = response as HttpResponse {
+//
+//        }
+//
+//    }
 //
 //    public class func fetchIndex(_ completionHandler:@escaping HLCompletionHandler) -> Void {
 //        let url = URL.init(string: "http://localhost:8080")

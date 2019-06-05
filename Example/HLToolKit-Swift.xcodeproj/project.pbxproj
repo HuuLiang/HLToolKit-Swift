@@ -16,7 +16,6 @@
 		EC37971B22A4ECC2009E935F /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC37971A22A4ECC2009E935F /* User.swift */; };
 		EC37994F22A50AEB009E935F /* httper.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC37994E22A50AEB009E935F /* httper.swift */; };
 		EC9FFA7A22A65A18005C27AD /* TestData.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC9FFA7922A65A18005C27AD /* TestData.swift */; };
-		EC9FFA7C22A667CE005C27AD /* NetworkConfig.geojson in Resources */ = {isa = PBXBuildFile; fileRef = EC9FFA7B22A667CE005C27AD /* NetworkConfig.geojson */; };
 		ECBF1DE7229FCAA60037EFF3 /* homeData.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECBF1DE6229FCAA60037EFF3 /* homeData.swift */; };
 /* End PBXBuildFile section */
 
@@ -37,7 +36,6 @@
 		EC37971A22A4ECC2009E935F /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		EC37994E22A50AEB009E935F /* httper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = httper.swift; sourceTree = "<group>"; };
 		EC9FFA7922A65A18005C27AD /* TestData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestData.swift; sourceTree = "<group>"; };
-		EC9FFA7B22A667CE005C27AD /* NetworkConfig.geojson */ = {isa = PBXFileReference; lastKnownFileType = text; path = NetworkConfig.geojson; sourceTree = "<group>"; };
 		ECBF1DE6229FCAA60037EFF3 /* homeData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = homeData.swift; sourceTree = "<group>"; };
 		ED0627ED5F0350985DCAA1DA /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		F09E00D1A188523408400BFA /* Pods-HLToolKit-Swift_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HLToolKit-Swift_Tests.release.xcconfig"; path = "Target Support Files/Pods-HLToolKit-Swift_Tests/Pods-HLToolKit-Swift_Tests.release.xcconfig"; sourceTree = "<group>"; };
@@ -135,7 +133,6 @@
 				EC9FFA7922A65A18005C27AD /* TestData.swift */,
 				EC37971A22A4ECC2009E935F /* User.swift */,
 				EC37994E22A50AEB009E935F /* httper.swift */,
-				EC9FFA7B22A667CE005C27AD /* NetworkConfig.geojson */,
 			);
 			path = network;
 			sourceTree = "<group>";
@@ -202,7 +199,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EC9FFA7C22A667CE005C27AD /* NetworkConfig.geojson in Resources */,
 				607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */,
 				607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */,
 				607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */,

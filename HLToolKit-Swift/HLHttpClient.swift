@@ -6,21 +6,12 @@
 //
 
 import Alamofire
-import HandyJSON
-//import CodableAlamofire
 
-public class HttpResponse<T:HandyJSON>:HandyJSON {
-    var data:T? = nil
-    var msg:String? = nil
-    var code:Int? = nil
-    required public init() {}
+open class HttpResponse<T:Codable>:Codable {
+    var data:T?
+    var msg:String?
+    var code:Int?
 }
-
-//struct HttpResponse<T:Decodable>:Decodable {
-//    var data:T? = nil
-//    var msg:String? = nil
-//    var code:Int? = nil
-//}
 
 
 fileprivate let kHLNetworkClientErrorDomain = "com.httpclient.errordomain"
@@ -59,7 +50,7 @@ open class HttpClient {
         return singleClient
     }
     //这里处理网络访问层的结果
-    public final func request(_ url:URL, _ requestMethod:HTTPMethod, _ params:[String : Any]? = nil , _ completionHandler:@escaping (_ anyObj :AnyObject? ,_ error :Error?) -> Void ) -> Void {
+    public final func request(_ url:URL, _ requestMethod:HTTPMethod, _ params:[String : Any]? = nil , _ completionHandler:@escaping (_ anyObj :Data? ,_ error :Error?) -> Void ) -> Void {
         if requestMethod != .get && requestMethod != .post {
             completionHandler(nil,HLError.initialize(errorCode: -1, desc: "This kind of Http method type is NOT supported"))
             return;
@@ -68,7 +59,7 @@ open class HttpClient {
         Alamofire.request(url, method: requestMethod, parameters: params, encoding: URLEncoding.default, headers: nil).responseJSON { response in
             switch response.result {
             case .success:
-                completionHandler(response.result.value as AnyObject?,nil)
+                completionHandler(response.data!,nil)
             case .failure(let error):
                 completionHandler(nil,error)
             }
@@ -76,23 +67,40 @@ open class HttpClient {
     }
 }
 
-//public protocol analyzeResponse {
-//    var code:Int? {get set}
-//    var msg:String? {get set}
-//}
+protocol AnalyzeResponse {
+//    @objc optional func analyzeResponse(_ xx:AnyObject) ->Void
+}
 
 open class HttpRequest {
-    public class func request<T:HandyJSON>(_ url:String,_ requestMethod:HTTPMethod,_ params:[String:Any]? = nil, _ structClass: T.Type, _ completionHandler:@escaping (_ anyObj:HttpResponse<T>? ,_ error:Error?) -> Void) -> Void {
+    
+    public class func requestData<T:Codable>(_ url:String,_ requestMethod:HTTPMethod,_ params:[String:Any]? = nil, _ structClass: T.Type, _ completionHandler:@escaping (_ anyObj:T?,_ error:Error?) -> Void) -> Void {
         HttpClient.defaultClient().request(URL.init(string: url)!, requestMethod, params) { (anyObj, error) in
             if error != nil {
                 completionHandler(nil,HLError.initialize(errorCode: (error! as NSError).code , desc: (error! as NSError).localizedDescription))
                 return
             }
-            if let responseModel = JSONDeserializer<HttpResponse<T>>.deserializeFrom(dict: anyObj as? Dictionary) {
-                completionHandler(responseModel ,nil)
-            } else {
-                completionHandler(nil,HLError.initialize(errorCode: -1 , desc: "NO Response"))
+            do {
+                let responseModel = try JSONDecoder().decode(HttpResponse<T>.self, from: anyObj!)
+                completionHandler(responseModel.data ,nil)
+            } catch let error {
+                completionHandler(nil,HLError.initialize(errorCode: (error as NSError).code , desc: "NO Response"))
             }
         }
     }
+    
+    public class func requestSuccess<T:Codable>(_ url:String,_ requestMethod:HTTPMethod,_ params:[String:Any]? = nil, _ structClass: T.Type, _ completionHandler:@escaping (_ success:Bool,_ error:Error?) -> Void) -> Void {
+        HttpClient.defaultClient().request(URL.init(string: url)!, requestMethod, params) { (anyObj, error) in
+            if error != nil {
+                completionHandler(false,HLError.initialize(errorCode: (error! as NSError).code , desc: (error! as NSError).localizedDescription))
+                return
+            }
+            do {
+                let responseModel = try JSONDecoder().decode(HttpResponse<T>.self, from: anyObj!)
+                completionHandler(responseModel.code == 200 ,nil)
+            } catch let error {
+                completionHandler(false,HLError.initialize(errorCode: (error as NSError).code , desc: "NO Response"))
+            }
+        }
+    }
+
 }

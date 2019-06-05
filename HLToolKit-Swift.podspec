@@ -35,9 +35,7 @@ Pod::Spec.new do |s|
   s.source_files = 'HLToolKit-Swift/**/*'
   s.dependency  'Aspects'
   s.dependency  'Alamofire'
-  s.dependency  'CodableAlamofire'
   s.dependency  'Kingfisher'
-  s.dependency  'HandyJSON'
   s.dependency  'PromiseKit'
   s.pod_target_xcconfig = { 'DEFINES_MODULE' => 'YES' }
 

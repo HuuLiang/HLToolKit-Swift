@@ -7,10 +7,10 @@
 //
 
 import Foundation
-import HandyJSON
+//import HandyJSON
 
-struct User : HandyJSON{
-    var id:Int?
-    var name:String?
-    var password:String?
-}
+//struct User : HandyJSON{
+//    var id:Int?
+//    var name:String?
+//    var password:String?
+//}

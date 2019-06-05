@@ -1,14 +1,9 @@
 PODS:
   - Alamofire (4.8.2)
   - Aspects (1.4.1)
-  - CodableAlamofire (1.1.1):
-    - Alamofire (~> 4.0)
-  - HandyJSON (5.0.0)
   - HLToolKit-Swift (0.0.1):
     - Alamofire
     - Aspects
-    - CodableAlamofire
-    - HandyJSON
     - Kingfisher
     - PromiseKit
   - Kingfisher (4.10.1)
@@ -29,8 +24,6 @@ SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - Alamofire
     - Aspects
-    - CodableAlamofire
-    - HandyJSON
     - Kingfisher
     - PromiseKit
 
@@ -41,9 +34,7 @@ EXTERNAL SOURCES:
 SPEC CHECKSUMS:
   Alamofire: ae5c501addb7afdbb13687d7f2f722c78734c2d3
   Aspects: 7595ba96a6727a58ebcbfc954497fc5d2fdde546
-  CodableAlamofire: b587c1198562824abb1f468aed34feb00d6cecd8
-  HandyJSON: 992f2d661716d6a91de82d0056927bc7813b5770
-  HLToolKit-Swift: 6eab04b508f0a97c9a74f9e9a5fccdf5b775698c
+  HLToolKit-Swift: 565dae68701d67c92cc5bfcf5afde4866fe4b14d
   Kingfisher: c148cd7b47ebde9989f6bc7c27dcaa79d81279a0
   PromiseKit: 51794a832647e7b819336dc2279039ce9f1cc49b
 
