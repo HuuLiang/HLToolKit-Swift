@@ -1,4 +1,6 @@
-use_frameworks!
+#use_frameworks!
+use_modular_headers!
+
 
 target 'HLToolKit-Swift_Example' do
   pod 'HLToolKit-Swift', :path => '../'
@@ -9,3 +11,8 @@ target 'HLToolKit-Swift_Example' do
 #
 #  end
 end
+
+#pre_install do |installer|
+#  Pod::PodTarget.send(:define_method, :static_framework?) { return true }
+#end
+

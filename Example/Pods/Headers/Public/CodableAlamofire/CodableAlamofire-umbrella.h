@@ -1,0 +1,1 @@
+../../../Target Support Files/CodableAlamofire/CodableAlamofire-umbrella.h

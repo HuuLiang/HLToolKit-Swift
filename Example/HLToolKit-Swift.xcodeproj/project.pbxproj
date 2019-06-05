@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		181AC7B9E66707C7EC6A15F0 /* Pods_HLToolKit_Swift_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8220DCC265625FA903F6BD0E /* Pods_HLToolKit_Swift_Example.framework */; };
+		126F5AB7E5C999CF459AE8F3 /* libPods-HLToolKit-Swift_Example.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F827E144DC23CCFB5375BAD /* libPods-HLToolKit-Swift_Example.a */; };
 		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
 		607FACD81AFB9204008FA782 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD71AFB9204008FA782 /* ViewController.swift */; };
 		607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 607FACD91AFB9204008FA782 /* Main.storyboard */; };
@@ -22,6 +22,7 @@
 
 /* Begin PBXFileReference section */
 		065758A32F7289A961B58800 /* Pods-HLToolKit-Swift_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HLToolKit-Swift_Example.release.xcconfig"; path = "Target Support Files/Pods-HLToolKit-Swift_Example/Pods-HLToolKit-Swift_Example.release.xcconfig"; sourceTree = "<group>"; };
+		3F827E144DC23CCFB5375BAD /* libPods-HLToolKit-Swift_Example.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-HLToolKit-Swift_Example.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		551F9E7721567E1752875F17 /* HLToolKit-Swift.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = "HLToolKit-Swift.podspec"; path = "../HLToolKit-Swift.podspec"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		5E5D8006D3623458450A0E2E /* Pods_HLToolKit_Swift_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HLToolKit_Swift_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD01AFB9204008FA782 /* HLToolKit-Swift_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "HLToolKit-Swift_Example.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -31,7 +32,6 @@
 		607FACDA1AFB9204008FA782 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		607FACDC1AFB9204008FA782 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		607FACDF1AFB9204008FA782 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		8220DCC265625FA903F6BD0E /* Pods_HLToolKit_Swift_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HLToolKit_Swift_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8E515A6DBA0074A706CED9CC /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		C3407216595B43FA0217F7B3 /* Pods-HLToolKit-Swift_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HLToolKit-Swift_Tests.debug.xcconfig"; path = "Target Support Files/Pods-HLToolKit-Swift_Tests/Pods-HLToolKit-Swift_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		EC37971A22A4ECC2009E935F /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
@@ -49,7 +49,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				181AC7B9E66707C7EC6A15F0 /* Pods_HLToolKit_Swift_Example.framework in Frameworks */,
+				126F5AB7E5C999CF459AE8F3 /* libPods-HLToolKit-Swift_Example.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -122,8 +122,8 @@
 		920E6F1F47F46A9DC2CE4523 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				8220DCC265625FA903F6BD0E /* Pods_HLToolKit_Swift_Example.framework */,
 				5E5D8006D3623458450A0E2E /* Pods_HLToolKit_Swift_Tests.framework */,
+				3F827E144DC23CCFB5375BAD /* libPods-HLToolKit-Swift_Example.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -151,7 +151,6 @@
 				607FACCC1AFB9204008FA782 /* Sources */,
 				607FACCD1AFB9204008FA782 /* Frameworks */,
 				607FACCE1AFB9204008FA782 /* Resources */,
-				A98871E3C75C2C551A3B9B23 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -213,36 +212,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		A98871E3C75C2C551A3B9B23 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-HLToolKit-Swift_Example/Pods-HLToolKit-Swift_Example-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
-				"${BUILT_PRODUCTS_DIR}/Aspects/Aspects.framework",
-				"${BUILT_PRODUCTS_DIR}/CodableAlamofire/CodableAlamofire.framework",
-				"${BUILT_PRODUCTS_DIR}/HLToolKit-Swift/HLToolKit_Swift.framework",
-				"${BUILT_PRODUCTS_DIR}/HandyJSON/HandyJSON.framework",
-				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
-				"${BUILT_PRODUCTS_DIR}/PromiseKit/PromiseKit.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Aspects.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CodableAlamofire.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/HLToolKit_Swift.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/HandyJSON.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PromiseKit.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-HLToolKit-Swift_Example/Pods-HLToolKit-Swift_Example-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		D01C8580FC6A4C1CF18AA8FA /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -407,6 +376,7 @@
 			baseConfigurationReference = F41543F136AD32AB5C439CAC /* Pods-HLToolKit-Swift_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = EZDMS4H92Q;
 				INFOPLIST_FILE = "HLToolKit-Swift/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
@@ -424,6 +394,7 @@
 			baseConfigurationReference = 065758A32F7289A961B58800 /* Pods-HLToolKit-Swift_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = EZDMS4H92Q;
 				INFOPLIST_FILE = "HLToolKit-Swift/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;

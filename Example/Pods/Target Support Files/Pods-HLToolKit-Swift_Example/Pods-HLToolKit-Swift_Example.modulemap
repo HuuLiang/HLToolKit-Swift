@@ -1,4 +1,4 @@
-framework module Pods_HLToolKit_Swift_Example {
+module Pods_HLToolKit_Swift_Example {
   umbrella header "Pods-HLToolKit-Swift_Example-umbrella.h"
 
   export *
