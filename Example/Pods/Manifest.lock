@@ -1,21 +1,34 @@
 PODS:
   - Alamofire (4.8.2)
   - Aspects (1.4.1)
-  - HLToolKit-Swift (0.0.2):
+  - Cache (5.2.0)
+  - EmptyDataSet-Swift (4.2.0)
+  - HLToolKit-Swift (0.0.3):
+    - HLToolKit-Swift/Core (= 0.0.3)
+    - HLToolKit-Swift/ImgPicker (= 0.0.3)
+  - HLToolKit-Swift/Core (0.0.3):
     - Alamofire
     - Aspects
+    - EmptyDataSet-Swift
     - Kingfisher
-    - PromiseKit
+    - MJRefresh
+    - PKHUD
+    - pop
+    - SCLAlertView
+    - SnapKit
+  - HLToolKit-Swift/ImgPicker (0.0.3):
+    - Cache (~> 5.0)
+    - Imaginary (~> 4.0)
+    - SVProgressHUD
+  - Imaginary (4.2.0):
+    - Cache (~> 5.0)
   - Kingfisher (4.10.1)
-  - PromiseKit (6.8.4):
-    - PromiseKit/CorePromise (= 6.8.4)
-    - PromiseKit/Foundation (= 6.8.4)
-    - PromiseKit/UIKit (= 6.8.4)
-  - PromiseKit/CorePromise (6.8.4)
-  - PromiseKit/Foundation (6.8.4):
-    - PromiseKit/CorePromise
-  - PromiseKit/UIKit (6.8.4):
-    - PromiseKit/CorePromise
+  - MJRefresh (3.2.0)
+  - PKHUD (5.3.0)
+  - pop (1.0.12)
+  - SCLAlertView (0.8)
+  - SnapKit (4.2.0)
+  - SVProgressHUD (2.2.5)
 
 DEPENDENCIES:
   - HLToolKit-Swift (from `../`)
@@ -24,8 +37,16 @@ SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - Alamofire
     - Aspects
+    - Cache
+    - EmptyDataSet-Swift
+    - Imaginary
     - Kingfisher
-    - PromiseKit
+    - MJRefresh
+    - PKHUD
+    - pop
+    - SCLAlertView
+    - SnapKit
+    - SVProgressHUD
 
 EXTERNAL SOURCES:
   HLToolKit-Swift:
@@ -34,9 +55,17 @@ EXTERNAL SOURCES:
 SPEC CHECKSUMS:
   Alamofire: ae5c501addb7afdbb13687d7f2f722c78734c2d3
   Aspects: 7595ba96a6727a58ebcbfc954497fc5d2fdde546
-  HLToolKit-Swift: 1afd5e8d064680e7a6f473573367f643da58b573
+  Cache: 807c5d86d01a177f06ede9865add3aea269bbfd4
+  EmptyDataSet-Swift: 1fa0b35f530a35f852ecb2b53564728b0c300aaf
+  HLToolKit-Swift: d36db98cec2181afe0b2ad29e8f263aed9073954
+  Imaginary: dae33d06dbc2ada22f98afef5eb45cc061311a2c
   Kingfisher: c148cd7b47ebde9989f6bc7c27dcaa79d81279a0
-  PromiseKit: 51794a832647e7b819336dc2279039ce9f1cc49b
+  MJRefresh: ed450d6eb9d3346a2cb033ab7eb6de090aeef437
+  PKHUD: 98f3e4bc904b9c916f1c5bb6d765365b5357291b
+  pop: d582054913807fd11fd50bfe6a539d91c7e1a55a
+  SCLAlertView: 6a77bb2edfc65e04dbe57725546cb4107a506b85
+  SnapKit: fe8a619752f3f27075cc9a90244d75c6c3f27e2a
+  SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
 
 PODFILE CHECKSUM: 27b82ecb7f8d3377dafe8ec76272ee1f636db757
 

@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'HLToolKit-Swift'
-  s.version          = '0.0.2'
+  s.version          = '0.0.3'
   s.summary          = 'A common tools for ios develop by swift.'
 
 # This description is used to generate tags and improve search results.
@@ -29,22 +29,30 @@ Pod::Spec.new do |s|
   s.swift_version    = "5.0.1"
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
-  s.ios.deployment_target = '8.0'
-  
-  
-  s.source_files = 'HLToolKit-Swift/**/*'
-  s.dependency  'Aspects'
-  s.dependency  'Alamofire'
-  s.dependency  'Kingfisher'
-  s.dependency  'PromiseKit'
+  s.ios.deployment_target = '9.0'
   s.pod_target_xcconfig = { 'DEFINES_MODULE' => 'YES' }
-
+    
+  s.subspec 'Core' do |core|
+      core.source_files = 'HLToolKit-Swift/Core/**/*'
+      core.dependency  'Aspects'
+      core.dependency  'Alamofire'
+      core.dependency  'Kingfisher'
+      core.dependency  'pop'
+      core.dependency  'EmptyDataSet-Swift'
+      core.dependency  'PKHUD'
+      core.dependency  'SCLAlertView'
+      core.dependency  'MJRefresh'
+      core.dependency  'SnapKit'
+      core.dependency  'Kingfisher'
+  end
   
-  # s.resource_bundles = {
-  #   'HLToolKit-Swift' => ['HLToolKit-Swift/Assets/*.png']
-  # }
+  s.subspec 'ImgPicker' do |pick|
+      pick.source_files       = 'HLToolKit-Swift/ImagePicker/**/*.swift' , ''
+      pick.resource = 'HLToolKit-Swift/ImagePicker/Resources/*'
+      pick.dependency 'SVProgressHUD'
+      pick.dependency 'Imaginary' ,'~> 4.0'
+      pick.dependency 'Cache' ,'~> 5.0'
+      pick.frameworks = 'UIKit', 'Foundation', 'AVFoundation', 'Photos', 'PhotosUI', 'CoreLocation', 'AVKit'
+  end
 
-  # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
 end

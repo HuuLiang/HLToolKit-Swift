@@ -1,6 +1,6 @@
 {
   "name": "HLToolKit-Swift",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "summary": "A common tools for ios develop by swift.",
   "description": "Swift版本工具集，持续更新中。",
   "homepage": "https://github.com/HuuLiang/HLToolKit-Swift",
@@ -13,29 +13,77 @@
   },
   "source": {
     "git": "https://github.com/HuuLiang/HLToolKit-Swift.git",
-    "tag": "0.0.2"
+    "tag": "0.0.3"
   },
   "swift_versions": "5.0.1",
   "platforms": {
-    "ios": "8.0"
-  },
-  "source_files": "HLToolKit-Swift/**/*",
-  "dependencies": {
-    "Aspects": [
-
-    ],
-    "Alamofire": [
-
-    ],
-    "Kingfisher": [
-
-    ],
-    "PromiseKit": [
-
-    ]
+    "ios": "9.0"
   },
   "pod_target_xcconfig": {
     "DEFINES_MODULE": "YES"
   },
+  "subspecs": [
+    {
+      "name": "Core",
+      "source_files": "HLToolKit-Swift/Core/**/*",
+      "dependencies": {
+        "Aspects": [
+
+        ],
+        "Alamofire": [
+
+        ],
+        "Kingfisher": [
+
+        ],
+        "pop": [
+
+        ],
+        "EmptyDataSet-Swift": [
+
+        ],
+        "PKHUD": [
+
+        ],
+        "SCLAlertView": [
+
+        ],
+        "MJRefresh": [
+
+        ],
+        "SnapKit": [
+
+        ]
+      }
+    },
+    {
+      "name": "ImgPicker",
+      "source_files": [
+        "HLToolKit-Swift/ImagePicker/**/*.swift",
+        ""
+      ],
+      "resources": "HLToolKit-Swift/ImagePicker/Resources/*",
+      "dependencies": {
+        "SVProgressHUD": [
+
+        ],
+        "Imaginary": [
+          "~> 4.0"
+        ],
+        "Cache": [
+          "~> 5.0"
+        ]
+      },
+      "frameworks": [
+        "UIKit",
+        "Foundation",
+        "AVFoundation",
+        "Photos",
+        "PhotosUI",
+        "CoreLocation",
+        "AVKit"
+      ]
+    }
+  ],
   "swift_version": "5.0.1"
 }
